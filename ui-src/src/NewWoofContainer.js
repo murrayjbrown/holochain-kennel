@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import NewMeow from './NewMeow'
+import NewWoof from './NewWoof'
 import {
   post
 } from './actions'
@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(NewMeow)
+)(NewWoof)

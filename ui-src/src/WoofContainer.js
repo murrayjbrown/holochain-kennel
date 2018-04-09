@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
-import Meow from './components/Meow'
+import Woof from './components/Woof'
 import { getPost } from './actions'
 
 const mapStateToProps = (state, ownProps) => {
-  const meowHash = ownProps.match.params.meowHash
+  const woofHash = ownProps.match.params.woofHash
   const arrayOfPosts = Object.keys(state.posts).map(postStamp => state.posts[postStamp])
-  let post = arrayOfPosts.find(p => p.hash === meowHash)
+  let post = arrayOfPosts.find(p => p.hash === woofHash)
   if (post) {
     post = Object.assign({}, post, {
       userHandle: state.handles[post.author]
@@ -19,7 +19,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     getPost: () => {
-      dispatch(getPost(ownProps.match.params.meowHash))
+      dispatch(getPost(ownProps.match.params.woofHash))
     }
   }
 }
@@ -27,4 +27,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Meow)
+)(Woof)

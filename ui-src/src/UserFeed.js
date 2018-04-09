@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Meow from './components/Meow'
+import Woof from './components/Woof'
 
 class UserFeed extends Component {
   componentDidMount () {
@@ -22,9 +22,9 @@ class UserFeed extends Component {
   }
   render () {
     return (
-      <div id='meows'>
+      <div id='woofs'>
         <h2 id='user-header'>{this.props.handle}</h2>
-        {this.props.postList.map(post => <Meow post={post} key={post.stamp} />)}
+        {this.props.postList.map(post => <Woof post={post} key={post.stamp} />)}
       </div>
     )
   }

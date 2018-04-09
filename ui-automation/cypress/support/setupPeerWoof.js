@@ -1,0 +1,10 @@
+before(function () {
+  cy.wait(500)
+  cy.request('POST', 'http://localhost:3141/fn/litter/post', {"message":"A woof from agent3141","stamp":1520931499163})
+  cy.wait(200)
+  cy.request('POST', 'http://localhost:3141/fn/litter/post', {"message":"A second woof from agent3141","stamp":1520931499200})
+  cy.wait(200)
+  cy.request('POST', 'http://localhost:5141/fn/litter/post', {"message":"A woof from agent5141","stamp":1520931499163})
+  cy.wait(200)
+  cy.request('POST', 'http://localhost:5141/fn/litter/post', {"message":"A second woof from agent5141","stamp":1520931499200})
+})

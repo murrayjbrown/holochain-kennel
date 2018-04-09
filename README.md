@@ -64,7 +64,7 @@ Now open a browser at http://localhost:3142/QmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz
 ```doQmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz3s4mR6TnsS
   [{"Req":{"Version":1,"NodeID":"QmTAjDmQHobs2oQZp4UrbSzkShUGVKcsQUdakHeQ4YYxRX","NodeAddr":"/ip4/0.0.0.0/tcp/6003"},"Remote":"[::1]:63187","LastSeen":"2018-01-11T12:32:15.659887156+11:00"},{"Req":{"Version":1,"NodeID":"QmWQVaqEayZJWnvxLtsKr1iyeTDp3s7m7TTE36HhAUTiTK","NodeAddr":"/ip4/0.0.0.0/tcp/6002"},"Remote":"[::1]:63153","LastSeen":"2018-01-11T12:28:40.85765899+11:00"}]
 ```
-Now open a browser to http://localhost:3141 and you will see Litter.  Open another tab to http://localhost:4141 and you now have 2 instances of Litter that you can chat between.  Add a handle in each and then meow and follow each instance and you will see the meows!!
+Now open a browser to http://localhost:3141 and you will see Litter.  Open another tab to http://localhost:4141 and you now have 2 instances of Litter that you can chat between.  Add a handle in each and then woof and follow each instance and you will see the woofs!!
 
 ### Docker Usage
 You can do all this much easier with Docker. Clone the latest release from [Litter Release](https://github.com/murrayjbrown/holochain-litter.git) and cd into the folder. Then run

@@ -128,12 +128,12 @@ function getFollow(params) {
 
 function post(post) {
     var key = commit('post', post);        // Commits the post block to my source chain, assigns resulting hash to 'key'
-    debug('<mermaid>' + App.Agent.String + '->>' + App.Agent.String + ':commit new meow</mermaid>');
-    debug('<mermaid>' + App.Agent.String + '->>DHT:Publish new meow</mermaid>');
+    debug('<mermaid>' + App.Agent.String + '->>' + App.Agent.String + ':commit new woof</mermaid>');
+    debug('<mermaid>' + App.Agent.String + '->>DHT:Publish new woof</mermaid>');
 
     // On the DHT, puts a link on my anchor to the new post
     commit("post_links",{Links:[{Base: handleHash(), Link: key, Tag: "post"}]});
-    debug('<mermaid>' + App.Agent.String + '->>DHT:Link meow to "post_links"</mermaid>');
+    debug('<mermaid>' + App.Agent.String + '->>DHT:Link woof to "post_links"</mermaid>');
 
     // debug(key);
     return key;                                  // Returns the hash key of the new post to the calling function

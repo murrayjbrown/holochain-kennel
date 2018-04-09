@@ -32,7 +32,7 @@ ul {
   margin: 8px;
 }
 
-#meow {
+#woof {
   margin: 10px;
 }
 
@@ -227,14 +227,14 @@ blockquote {
 	}
 }
 
-.meow {
+.woof {
 	margin: 1em;
 	padding: 0.75em;
 	background-color: rgba(0, 0, 0, 0.6);
 	border-radius: 10px;
         color: wheat;
 }
-.meow-edit {
+.woof-edit {
   display: none;
 }
 .closer {
@@ -293,7 +293,7 @@ blockquote {
 }
 
 
-.meow-edit {
+.woof-edit {
   float:right;
 }
 

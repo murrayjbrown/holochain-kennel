@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Meow from './components/Meow'
+import Woof from './components/Woof'
 
 class FollowingFeed extends Component {
   componentDidMount () {
@@ -26,8 +26,8 @@ class FollowingFeed extends Component {
   }
   render () {
     return (
-      <div id='meows'>
-        {this.props.postList.map(post => <Meow post={post} key={post.stamp} />)}
+      <div id='woofs'>
+        {this.props.postList.map(post => <Woof post={post} key={post.stamp} />)}
       </div>
     )
   }

@@ -6,22 +6,22 @@ import { action } from '@storybook/addon-actions'
 import { specs, describe, it } from 'storybook-addon-specifications'
 import { configure, mount } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import Meow from './Meow'
+import Woof from './Woof'
 import expect from 'expect'
 
 configure({ adapter: new Adapter() })
 
-storiesOf('Meow', module)
+storiesOf('Woof', module)
   .addDecorator(story => (
     <MemoryRouter initialEntries={['/']}>{story()}</MemoryRouter>
   ))
-  .add('With 2 meows', () => {
+  .add('With 2 woofs', () => {
     const post = {'message': 'Eric', 'author': 'author', 'stamp': 1516273525437}
-    return getMeow(post)  
+    return getWoof(post)  
   })
 
-function getMeow (post) {
+function getWoof (post) {
   return (
-    <Meow getPost={action('clicked')} post={post} />
+    <Woof getPost={action('clicked')} post={post} />
   )
 }

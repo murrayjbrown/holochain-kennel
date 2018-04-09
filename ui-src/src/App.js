@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
 import SettingsContainer from './SettingsContainer'
 import FollowContainer from './FollowContainer'
-import NewMeowContainer from './NewMeowContainer'
+import NewWoofContainer from './NewWoofContainer'
 import FollowingFeedContainer from './FollowingFeedContainer'
 import UserFeedContainer from './UserFeedContainer'
-import MeowContainer from './MeowContainer'
+import WoofContainer from './WoofContainer'
 
 class App extends Component {
   componentWillMount () {
@@ -49,12 +49,12 @@ class App extends Component {
                 <div className='subtitle'>can haz herd cats?</div>
               </div>
               <div id='content'>
-                <Route path='/' exact component={NewMeowContainer} />
+                <Route path='/' exact component={NewWoofContainer} />
                 <Route path='/' exact component={FollowingFeedContainer} />
                 <Route path='/u/:handle' component={UserFeedContainer} />
                 <Route path='/settings' component={SettingsContainer} />
                 <Route path='/follow' component={FollowContainer} />
-                <Route path='/meow/:meowHash' component={MeowContainer} />
+                <Route path='/woof/:woofHash' component={WoofContainer} />
               </div>
             </div>
           </div>
