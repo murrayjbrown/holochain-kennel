@@ -3,13 +3,15 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
 **P2P twitter-clone built on holochain**
-A group of puppies is called a *Litter.* Maybe it's time for a fully distributed shoutcast network of cute puppies, rather than a certain bluebird.
+A group of puppies is called a *litter.* Maybe it's time for a fully distributed shoutcast network of cute puppies, rather than a certain bluebird.
 
 *Litter* is a work in progress, derived from the Holochain project's [Litter](https://github.com/holochain/litter)
 sample application which exists to demonstrate how easy it is to build applications on holochain.
 
 
 **Code Status:** Pre-alpha. Not for production use. This application has not been audited for any security validation.
+
+*Note: The committed codebase does not YET reflect this README, which has been written per the intended derivation from the Clutter application.*
 
 ## Installation & Usage
 
