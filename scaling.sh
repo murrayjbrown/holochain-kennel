@@ -77,7 +77,7 @@ DURATION=$((START+PAUSE+10))
 
 SERVER_ID=$(<scaling.serverid)
 
-cd clutter
+cd litter
 git checkout test
 cd test/scaling
 echo "DURATION:$DURATION"

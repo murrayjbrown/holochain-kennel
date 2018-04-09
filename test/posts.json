@@ -2,7 +2,7 @@
     "Tests":[
         {
             "Convey":"setup handle for posting",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "newHandle",
             "Input": "buffaloBill",
             "Output": "%h2%",
@@ -12,7 +12,7 @@
         },
         {
             "Convey":"Getting posts when they don't exist returns empty list",
-            "Zome":   "clutter",
+            "Zome":   "litter",
             "FnName": "getPostsBy",
             "Input":  ["buffaloBill"],
             "Output": [],
@@ -22,7 +22,7 @@
         },
         {
             "Convey":"Post must have non-zero length",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "post",
             "Input": {"message": "",
                       "stamp":12345},
@@ -31,7 +31,7 @@
         },
         {
             "Convey":"We can create a new post",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "post",
             "Input": {"message": "here is a test post",
                       "stamp":12345},
@@ -41,7 +41,7 @@
             "Regexp": ""
         },
         {
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "appProperty",
             "Input": "App_Key_Hash",
             "Output": "",
@@ -52,7 +52,7 @@
         {
             "Convey":"We can retrieve posts",
             "Comments": "Uses the link hash for the Anchor - %h6%",
-            "Zome":   "clutter",
+            "Zome":   "litter",
             "FnName": "getPostsBy",
             "Input":  ["buffaloBill"],
             "Output": [{"H":"%h1%","author":"buffaloBill","post":{"message":"here is a test post","stamp":12345}}],
@@ -62,7 +62,7 @@
         },
         {
             "Convey":"We can modify a post",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "postMod",
             "Input": {"hash": "%h1%",
                       "post": {"stamp": 12346,
@@ -74,7 +74,7 @@
         },
         {
             "Convey":"We can retrieve modified posts",
-            "Zome":   "clutter",
+            "Zome":   "litter",
             "FnName": "getPostsBy",
             "Input":  ["buffaloBill"],
             "Output": [{"H":"%h2%","author":"buffaloBill","post":{"message":"this is the modified post","stamp":12346}}],
@@ -84,7 +84,7 @@
         },
         {
             "Convey":"Trying to modify a post with the wrong key will fail validation",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "postMod",
             "Input": {"hash": "%h2%",
                       "post": {"stamp": 12346,
@@ -94,7 +94,7 @@
         },
         {
             "Convey":"We can retrieve a single post",
-            "Zome":   "clutter",
+            "Zome":   "litter",
             "FnName": "getPost",
             "Input":  {
               "postHash": "%h2%"
@@ -106,7 +106,7 @@
         },
         {
             "Convey":"Retrieving single post will return null if not found",
-            "Zome":   "clutter",
+            "Zome":   "litter",
             "FnName": "getPost",
             "Input":  {
               "postHash": "%h1%"

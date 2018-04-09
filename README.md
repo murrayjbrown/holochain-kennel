@@ -5,13 +5,13 @@
 **P2P twitter-clone built on holochain**
 A group of puppies is called a *litter.* Maybe it's time for a fully distributed shoutcast network of cute puppies, rather than a certain bluebird.
 
-*Litter* is a work in progress, derived from the Holochain project's [Litter](https://github.com/holochain/litter)
+*Litter* is a work in progress, derived from the Holochain project's [clutter](https://github.com/holochain/clutter)
 sample application which exists to demonstrate how easy it is to build applications on holochain.
 
 
 **Code Status:** Pre-alpha. Not for production use. This application has not been audited for any security validation.
 
-*Note: The committed codebase does not YET reflect this README, which has been written per the intended derivation from the Clutter application.*
+*Note: The committed codebase does not YET reflect this README, which has been written per the intended derivation from the* clutter *application.*
 
 ## Installation & Usage
 

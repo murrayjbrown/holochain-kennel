@@ -1,4 +1,4 @@
-## Clutter rewritten in Redux/React
+## Litter rewritten in Redux/React
 
 This app was bootstrapped using `create-react-app`. Run `$ npm install` to install dependencies, and then `$ npm start` to boot up the server. 
 You should also be running `$ hcdev web` for the holochain app. 
@@ -24,7 +24,7 @@ export function getFollow(userHash, type, then) {
     type: GET_FOLLOW,
     meta: {
       isHc: true,
-      namespace: 'clutter',
+      namespace: 'litter',
       data: {
         from: userHash,
         type: type
@@ -39,7 +39,7 @@ export function getFollow(userHash, type, then) {
 - Make the last parameter a variable called `then` which represents a callback function, which will be passed the final value of your API request as well. This uses the promise chains pattern.
 - Make the `type` equal to the constant you defined, like `GET_FOLLOW`.
 - Under `meta`, you must set `isHc` to `true`. This tells the middleware this is a HC request.
-- Under `meta` you must set a `namespace`, which must be the name of your running Holochain app, such as `clutter`. It will be used in the URL the request is sent to.
+- Under `meta` you must set a `namespace`, which must be the name of your running Holochain app, such as `litter`. It will be used in the URL the request is sent to.
 - Under `meta`, set `data` to whatever your input parameters for the function were, such as `userHash` and `type`, in the format that the HC app defines. It can be a simple string, like `data: "test"`, or an object like in the example. The middleware will stringify the data to send it to ther server if it's an object.
 - Under `meta`, set the key `then` equal to the value of the `then` parameter that was passed. It doesn't matter if `then` is undefined. This is like the `callback` that you can call when the async request completes.
 
@@ -103,7 +103,7 @@ const middleware = compact([
   requestSendingMiddleware,
   promiseMiddleware
 ])
-let store = createStore(clutterApp, undefined, compose(applyMiddleware(...middleware)))
+let store = createStore(litterApp, undefined, compose(applyMiddleware(...middleware)))
 ```
 
 Now we can access our API values in our reducers, and use them to modify state. e.g.

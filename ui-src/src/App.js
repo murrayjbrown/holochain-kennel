@@ -45,7 +45,7 @@ class App extends Component {
               </div>
               <Link to='/follow' id='followButton' className='btn btn-default'>Follow People</Link>
               <div id='banner'>
-                Clutter
+                Litter
                 <div className='subtitle'>can haz herd cats?</div>
               </div>
               <div id='content'>
@@ -61,9 +61,9 @@ class App extends Component {
           <div className='col-sm-3'>
             <div className='alphabox'>
               <div id='about'>
-                <h2>What is Clutter?</h2>
-                <p>A <a href='https://en.wiktionary.org/wiki/clutter'><em>clutter</em></a> is a flock of cats.</p>
-                <p><strong>Clutter</strong> is a fully decentralized alternative to Twitter.</p>
+                <h2>What is Litter?</h2>
+                <p>A <a href='https://en.wiktionary.org/wiki/litter'><em>litter</em></a> is a flock of cats.</p>
+                <p><strong>Litter</strong> is a fully decentralized alternative to Twitter.</p>
                 <p>Impossible to censor or control.</p>
                 <p>Join the mewvolution on <a href='http://holochain.org'>holochain.org</a>.</p>
               </div>

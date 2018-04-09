@@ -1,6 +1,6 @@
 FROM metacurrency/holochain
 
-ADD . /clutter
-WORKDIR /clutter
+ADD . /litter
+WORKDIR /litter
 
 EXPOSE 3141

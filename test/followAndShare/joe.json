@@ -3,7 +3,7 @@
       {
             "Time":2000,
             "Convey":"setup handle for posting",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "newHandle",
             "Input": "joe",
             "Output": "%h2%",
@@ -14,7 +14,7 @@
         {
             "Time":2500,
             "Convey":"There are no followers for Joe yet",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "getFollow",
             "Input": {
               "from": "joe",
@@ -26,7 +26,7 @@
         {
             "Time":2700,
             "Convey":"follow jane",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "follow",
             "Input": "jane",
             "Output": "%h%",
@@ -37,7 +37,7 @@
         {
             "Time":3000,
             "Convey":"retrieve jane's posts",
-            "Zome":   "clutter",
+            "Zome":   "litter",
             "FnName": "getPostsBy",
             "Input":  ["jane"],
             "Exposure":"public",
@@ -47,7 +47,7 @@
         {
             "Time":5000,
             "Convey":"We can retrieve a list of all handles",
-            "Zome": "clutter",
+            "Zome": "litter",
             "Input": "var handles = getHandles(); handles.length==2",
             "Output": true,
             "Exposure": "public",
@@ -57,7 +57,7 @@
         {
             "Time":5000,
             "Convey":"We can retrieve a list of people Joe is following",
-            "Zome": "clutter",
+            "Zome": "litter",
             "FnName": "getFollow",
             "Input": {
               "from": "joe",
