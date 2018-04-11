@@ -1,7 +1,7 @@
 {
     "Tests":[
       {
-          "Zome": "litter",
+          "Zome": "kennel",
           "FnName": "appProperty",
           "Input": "Agent_Handle",
           "Output": "",
@@ -11,7 +11,7 @@
       },
       {
             "Convey":"We can create a new handle",
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "newHandle",
             "Input": "buffaloBill",
             "Output": "%h2%",
@@ -20,7 +20,7 @@
             "Regexp": ""
         },
         {
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "appProperty",
             "Input": "Agent_Handle",
             "Output": "buffaloBill",
@@ -29,7 +29,7 @@
             "Regexp": ""
         },
       {
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "appProperty",
             "Input": "App_DNA_Hash",
             "Output": "%dna%",
@@ -38,7 +38,7 @@
             "Regexp": ""
         },
         {
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "appProperty",
             "Input": "App_Key_Hash",
             "Output": "%key%",
@@ -47,7 +47,7 @@
             "Regexp": ""
         },
         {
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "appProperty",
             "Input": "garbage",
             "Output": "Error: No App Property with name: garbage",
@@ -56,7 +56,7 @@
             "Regexp": ""
         },
         {
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "getProperty",
             "Input": "description",
             "Output": "",
@@ -65,7 +65,7 @@
             "Regexp": "[a-z]{2,3}"
         },
         {
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "getProperty",
             "Input": "enableDirectoryAccess",
             "Output": "true",

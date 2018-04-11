@@ -18,7 +18,7 @@ export function getHandle (userHash, isMe = false, then) {
     type: GET_HANDLE,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: userHash,
       isMe,
       then
@@ -31,7 +31,7 @@ export function getHandles (then) {
     type: GET_HANDLES,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       then
     }
   }
@@ -42,7 +42,7 @@ export function newHandle (handle, then) {
     type: NEW_HANDLE,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: handle,
       then
     }
@@ -54,7 +54,7 @@ export function getFollow (handle, type, then) {
     type: GET_FOLLOW,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: {
         from: handle,
         type: type
@@ -69,7 +69,7 @@ export function appProperty (key, then) {
     type: APP_PROPERTY,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: key,
       then
     }
@@ -81,7 +81,7 @@ export function post (message, then) {
     type: POST,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: {
         message: message,
         stamp: new Date().valueOf()
@@ -96,7 +96,7 @@ export function getPost (postHash, then) {
     type: GET_POST,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: {
         postHash
       },
@@ -110,7 +110,7 @@ export function postMod (hash, message, then) {
     type: POST_MOD,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: {
         hash,
         post: {
@@ -128,7 +128,7 @@ export function getPostsBy (handles, then) {
     type: GET_POSTS_BY,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: handles,
       then
     }
@@ -140,7 +140,7 @@ export function getAgent (handle, then) {
     type: GET_AGENT,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: handle,
       then
     }
@@ -152,7 +152,7 @@ export function follow (handle, then) {
     type: FOLLOW,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: handle,
       then
     }
@@ -164,7 +164,7 @@ export function unfollow (userHash, then) {
     type: UNFOLLOW,
     meta: {
       isHc: true,
-      namespace: 'litter',
+      namespace: 'kennel',
       data: userHash,
       then
     }

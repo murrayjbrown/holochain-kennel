@@ -237,12 +237,12 @@ function genesis() {                            // 'hc gen chain' calls the gene
 // ===============================================================================
 
 function validateCommit(entry_type,entry,header,pkg,sources) {
-    // debug("Litter validate commit: "+ JSON.stringify(pkg));
+    // debug("Kennel validate commit: "+ JSON.stringify(pkg));
     return validate(entry_type,entry,header,sources);
 }
 
 function validatePut(entry_type,entry,header,pkg,sources) {
-    // debug("Litter validate put: "+ JSON.stringify(pkg));
+    // debug("Kennel validate put: "+ JSON.stringify(pkg));
     return validate(entry_type,entry,header,sources);
 }
 
@@ -266,7 +266,7 @@ function validate(entry_type,entry,header,sources) {
 //   - Only Bob should be able to make Bob a "follower" of Alice
 //   - Only Bob should be able to list Alice in his people he is "following"
 function validateLink(linkEntryType,baseHash,links,pkg,sources){
-   // debug("Litter validate link: " + sources);
+   // debug("Kennel validate link: " + sources);
     // if (linkEntryType=="handle_links") {
     //     var length = links.length;
     //     // a valid handle is when:
@@ -297,7 +297,7 @@ function validateLink(linkEntryType,baseHash,links,pkg,sources){
     return true;
 }
 function validateMod(entry_type,entry,header,replaces,pkg,sources) {
-    // debug("Litter validate mod: "+entry_type+" header:"+JSON.stringify(header)+" replaces:"+JSON.stringify(replaces));
+    // debug("Kennel validate mod: "+entry_type+" header:"+JSON.stringify(header)+" replaces:"+JSON.stringify(replaces));
     if (entry_type == "handle") {
         // check that the source is the same as the creator
         // TODO we could also check that the previous link in the type-chain is the replaces hash.
@@ -319,24 +319,24 @@ function validateMod(entry_type,entry,header,replaces,pkg,sources) {
     return true;
 }
 function validateDel(entry_type,hash,pkg,sources) {
-  // debug('Litter validateDel:' + sources)
+  // debug('Kennel validateDel:' + sources)
   return true;
 }
 function validatePutPkg(entry_type) {
-  debug('Litter validatePutPkg: ' + App.Agent.String);
+  debug('Kennel validatePutPkg: ' + App.Agent.String);
   var req = {};
   req[HC.PkgReq.Chain]=HC.PkgReq.ChainOpt.Full;
   return req;
 }
 function validateModPkg(entry_type) {
-  // debug('Litter validateModPkg')
+  // debug('Kennel validateModPkg')
   return null;
 }
 function validateDelPkg(entry_type) {
-  // debug('Litter validateDelPkg')
+  // debug('Kennel validateDelPkg')
   return null;
 }
 function validateLinkPkg(entry_type) {
-  // debug('Litter validateLinkPkg')
+  // debug('Kennel validateLinkPkg')
   return null;
 }

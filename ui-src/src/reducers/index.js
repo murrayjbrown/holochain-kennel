@@ -1,7 +1,7 @@
 import * as A from '../actions'
 
 const initialState = {
-  // any app properties received from litter backend
+  // any app properties received from kennel backend
   appProperties: {},
   // posts with 'stamp' as their key
   posts: {},
@@ -18,7 +18,7 @@ const initialState = {
   me: ''
 }
 
-export default function litterApp (state = initialState, action) {
+export default function kennelApp (state = initialState, action) {
   const { type, meta, payload } = action
   // console.log('reducer type ' + type)
   switch (type) {

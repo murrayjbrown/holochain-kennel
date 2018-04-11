@@ -1,7 +1,7 @@
 {
     "Version": 0,
     "UUID": "00000000-0000-0000-0000-000000000000",
-    "Name": "litter",
+    "Name": "kennel",
     "RequiresVersion": 21,
     "Properties": {
         "description": "distributed micro-blogging (Twitter clone)",
@@ -17,10 +17,10 @@
     },
     "Zomes": [
         {
-            "Name": "litter",
+            "Name": "kennel",
             "Description": "zome that implements micro-blogging",
             "RibosomeType": "js",
-            "CodeFile": "litter.js",
+            "CodeFile": "kennel.js",
             "Config": {
               "ErrorHandling": "throwErrors"
             },

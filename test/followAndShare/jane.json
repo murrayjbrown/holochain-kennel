@@ -2,7 +2,7 @@
     "Tests":[
       {
             "Convey":"setup handle for posting",
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "newHandle",
             "Input": "jane",
             "Output": "%h2%",
@@ -13,7 +13,7 @@
         {
             "Time":200,
             "Convey":"We can retrieve a list of all handles",
-            "Zome": "litter",
+            "Zome": "kennel",
             "Input": "var handles = getHandles(); handles.length==1",
             "Output": true,
             "Exposure":"public",
@@ -22,7 +22,7 @@
         },
         {
             "Convey":"create a new post",
-            "Zome": "litter",
+            "Zome": "kennel",
             "FnName": "post",
             "Input": {"message": "hello world",
                       "stamp":12345},

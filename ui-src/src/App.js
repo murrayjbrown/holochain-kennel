@@ -34,7 +34,7 @@ class App extends Component {
         <div className='row'>
           <div className='col-sm-2'>
             <div className='logo'>
-              <img src='/cat-eating-bird-circle.png' alt='cat eating bird' />
+              <img src='/puppy-hunting-bird-circle.png' alt='puppy hunting bird' />
             </div>
           </div>
           <div className='col-sm-7'>
@@ -45,8 +45,8 @@ class App extends Component {
               </div>
               <Link to='/follow' id='followButton' className='btn btn-default'>Follow People</Link>
               <div id='banner'>
-                Litter
-                <div className='subtitle'>can haz herd cats?</div>
+                Kennel
+                <div className='subtitle'>can haz moar puppies?</div>
               </div>
               <div id='content'>
                 <Route path='/' exact component={NewWoofContainer} />
@@ -61,11 +61,11 @@ class App extends Component {
           <div className='col-sm-3'>
             <div className='alphabox'>
               <div id='about'>
-                <h2>What is Litter?</h2>
-                <p>A <a href='https://en.wiktionary.org/wiki/litter'><em>litter</em></a> is a flock of cats.</p>
-                <p><strong>Litter</strong> is a fully decentralized alternative to Twitter.</p>
+                <h2>What is Kennel?</h2>
+                <p>A <a href='http://www.thealmightyguru.com/Pointless/AnimalGroups.html'><em>kennel</em></a> is a flock of puppy dogs.</p>
+                <p><strong>Kennel</strong> is a fully decentralized alternative to Twitter.</p>
                 <p>Impossible to censor or control.</p>
-                <p>Join the mewvolution on <a href='http://holochain.org'>holochain.org</a>.</p>
+                <p>Join the woofolution on <a href='http://holochain.org'>holochain.org</a>.</p>
               </div>
             </div>
           </div>

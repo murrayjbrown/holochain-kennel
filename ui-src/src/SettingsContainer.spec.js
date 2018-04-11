@@ -23,7 +23,7 @@ describe('Pact', () => {
   // (1) Create the Pact object to represent your provider
   const provider = new Pact({
     consumer: 'Settings',
-    provider: 'Litter',
+    provider: 'Kennel',
     port: MOCK_SERVER_PORT,
     log: path.resolve(process.cwd(), 'logs', 'pact.log'),
     dir: path.resolve(process.cwd(), 'pacts'),
@@ -46,7 +46,7 @@ describe('Pact', () => {
               uponReceiving: 'A request to set a new handle',
               withRequest: {
                 method: 'POST',
-                path: 'fn/litter/newHandle',
+                path: 'fn/kennel/newHandle',
                 body: 'testUserName',
                 headers: { 'Accept': 'application/json' }
               },

@@ -1,6 +1,6 @@
 FROM metacurrency/holochain
 
-ADD . /litter
-WORKDIR /litter
+ADD . /kennel
+WORKDIR /kennel
 
 EXPOSE 3141

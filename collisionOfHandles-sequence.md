@@ -17,10 +17,10 @@ Holochain dev service initialized:
     key-pair generated
     using phil@Philips-MBP.lan as default agent identity (stored to agent.txt)
 Copying chain to: /tmp/hcdev_scenario_test_nodes_philipbeadle/phil
-lucy: Test 'lucy.0' t+2000ms: Lucy creates a new handle the first time she uses Litter
+lucy: Test 'lucy.0' t+2000ms: Lucy creates a new handle the first time she uses Kennel
 lucy: <mermaid>lucy@Philips-MBP.lan-->>DHT:Check to see if lucy@Philips-MBP.lan has any exisitng handles</mermaid>
 lucy: <mermaid>DHT->>lucy@Philips-MBP.lan:returns any handles</mermaid>
-phil: Test 'phil.0' t+6000ms: Phil sets up a new handle 'Archer' the first time he uses Litter
+phil: Test 'phil.0' t+6000ms: Phil sets up a new handle 'Archer' the first time he uses Kennel
 phil: <mermaid>phil@Philips-MBP.lan-->>DHT:Check to see if phil@Philips-MBP.lan has any exisitng handles</mermaid>
 phil: <mermaid>DHT->>phil@Philips-MBP.lan:returns any handles</mermaid>
 phil: <mermaid>phil@Philips-MBP.lan-->>DHT:Check to see if Archer exists</mermaid>

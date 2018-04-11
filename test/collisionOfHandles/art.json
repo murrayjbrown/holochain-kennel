@@ -3,7 +3,7 @@
       {
           "Time": 12000,
           "Convey":"Art tries to use handle 'Archer' which is already taken by Phil",
-          "Zome": "litter",
+          "Zome": "kennel",
           "FnName": "newHandle",
           "Input": "Archer",
           "Output": "HandleInUse",
@@ -14,7 +14,7 @@
       {
           "Time":4000,
           "Convey":"Art can retrieve a list of all handles",
-          "Zome": "litter",
+          "Zome": "kennel",
           "FnName": "getHandles",
           "Input": "Array.length==1",
           "Output": true,

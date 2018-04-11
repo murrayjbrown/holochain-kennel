@@ -1,7 +1,7 @@
 {
   "name": "ui-automation",
   "version": "1.0.0",
-  "description": "Cypress automation for Litter",
+  "description": "Cypress automation for Kennel",
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Holochain/litter.git"
+    "url": "git+https://github.com/Holochain/kennel.git"
   },
   "keywords": [
     "Holochain",
-    "Litter"
+    "Kennel"
   ],
   "author": "Philip Beadle",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Holochain/litter/issues"
+    "url": "https://github.com/Holochain/kennel/issues"
   },
   "standard":  {
     "parser": "babel-eslint",
@@ -35,7 +35,7 @@
       "cy"
     ]
   },
-  "homepage": "https://github.com/Holochain/litter#readme",
+  "homepage": "https://github.com/Holochain/kennel#readme",
   "devDependencies": {
     "cypress": "^1.1.4"
   }

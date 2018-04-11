@@ -1,4 +1,4 @@
-describe('This section describes how to manage your Litter handle', function () {
+describe('This section describes how to manage your Kennel handle', function () {
   it('Let\'s go to the Settings and set the handle others will be able to find us by', function () {
     cy.visit('/')
     cy.get('#changeHandleButton').click()
