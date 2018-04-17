@@ -2,16 +2,21 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-**P2P twitter-clone built on holochain**
-A group of puppy dogs is called a *kennel.* Maybe it's time for a fully distributed shoutcast network of cute puppies, rather than a certain bluebird.
+**Overview**
+*Kennel* is a work in progress, derived from the Holochain project's [clutter](https://github.com/holochain/clutter) sample application which exists to demonstrate how easy it is to build applications on holochain.
 
-*Kennel* is a work in progress, derived from the Holochain project's [clutter](https://github.com/holochain/clutter)
-sample application which exists to demonstrate how easy it is to build applications on holochain.
+A group of puppy dogs is called a *kennel.* Maybe it's time for a fully distributed shoutcast network of cute puppies, rather than a certain bluebird — or cats; I'm not particularly fond of cats. ;-)
 
+**Purpose:**
+This project is a personal learning vehicle for exploring the [Holochain](https://github.com/Holochain/holochain-proto) distributed computing platform, Holochain distributed applications (dApps), and the [PureScript](http://www.purescript.org/) programming language.
+
+**Objectives**:
+
+1.  Develop this dApp in PureScript with generic bindings for Holochain.
+
+1.  Evolve this dApp into something more transactional, such as for puppy adoption, perhaps with (qualified) auctions; or breeding with pedigree tracking.
 
 **Code Status:** Pre-alpha. Not for production use. This application has not been audited for any security validation.
-
-*Note: The committed codebase does not YET reflect this README, which has been written per the intended derivation from the* clutter *application.*
 
 ## Installation & Usage
 
@@ -60,11 +65,12 @@ You will see a response like:
 Copying chain to: /Users/mjbrown/.holochaindev
 Serving holochain with DNA hash:QmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz3s4mR6TnsS on port:3141
 ```
-Now open a browser at http://localhost:3142/QmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz3s4mR6TnsS (substituting in the DNA hash from the response above if different) and look at the Bootstrap server.  You will see 2 records like this
+Now open a browser at
+[http://localhost:3142/QmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz3s4mR6TnsS]( http://localhost:3142/QmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz3s4mR6TnsS) (substituting in the DNA hash from the response above if different) and look at the Bootstrap server.  You will see 2 records like this
 ```doQmVbbeDAHVxC9cTvx6UhNEeTCK99SRKfxKDz3s4mR6TnsS
   [{"Req":{"Version":1,"NodeID":"QmTAjDmQHobs2oQZp4UrbSzkShUGVKcsQUdakHeQ4YYxRX","NodeAddr":"/ip4/0.0.0.0/tcp/6003"},"Remote":"[::1]:63187","LastSeen":"2018-01-11T12:32:15.659887156+11:00"},{"Req":{"Version":1,"NodeID":"QmWQVaqEayZJWnvxLtsKr1iyeTDp3s7m7TTE36HhAUTiTK","NodeAddr":"/ip4/0.0.0.0/tcp/6002"},"Remote":"[::1]:63153","LastSeen":"2018-01-11T12:28:40.85765899+11:00"}]
 ```
-Now open a browser to http://localhost:3141 and you will see Kennel.  Open another tab to http://localhost:4141 and you now have 2 instances of Kennel that you can chat between.  Add a handle in each and then woof and follow each instance and you will see the woofs!!
+Now open a browser to [http://localhost:3141](http://localhost:3141) and you will see Kennel.  Open another tab to [http://localhost:4141](http://localhost:4141) and you now have 2 instances of Kennel that you can chat between.  Add a handle in each and then woof and follow each instance and you will see the woofs!!
 
 ### Docker Usage
 You can do all this much easier with Docker. Clone the latest release from [Kennel Release](https://github.com/murrayjbrown/holochain-kennel.git) and cd into the folder. Then run
@@ -136,45 +142,6 @@ When a branch is pushed to Github Travis runs a build.  The build does the follo
 4. Runs the Cypress e2e tests.
 5. If on master a new release is published to github releases. (coming soon)
 
-## Feature Roadmap and Current Progress (TBD)
- - [x] Set default handle from AgentID string
- - [x] Enable users to change their handle
- - [x] Share mews (tweets) -- up to 256 characters
- - [x] Follow someone (by specified handle)
- - [x] Unfollow someone
- - [x] View post stream of people you follow sorted by time
- - [x] Detect #hashtags in post text
- - [x] Create hashtag anchors if they don't exist
- - [x] Link from hashtag anchor to posts with that hashtag
- - [x] Show posts which have a particular hashtag
- - [x] Mark posts as a favorite :star:
- - [x] Link favorited posts from a user/handle
- - [ ] Show someone's :star: favorited posts
- - [ ] Edit a previous post **(partially implemented)**
- - [ ] Refollow someone previously unfollowed **(partially implemented - Have to fix put/del/put links sequence)**
- - [ ] Detect @mentions in post text
- - [ ] Link from handle posts which @mention them
- - [ ] Show @mentions for a user/handle
- - [ ] Lists - Special anchor type with text being "*[userhandle]-[listname]*" with links to users on a named list which is named unique-per-user
- - [ ] Reply to mew (add reply-to link + link to replies)
- - [ ] Remew/Retweet (link to original in content of post? + new content?)
- - [ ] Enable direct messages via N2N private messaging
- - [ ] Detect links
- - [ ] Include links (w/ link shortening?) as linked link
- - [ ] Pretty display of OpenGraph data for first link
- - [ ] Create/Read/Update/Delete User profile info (first name, last name, location, picture, website, etc.)
- - [ ] Keyword indexing/search with Holodex integration
- - [ ] Search with result groupings/tabs (people, posts, tags, trending, )
- - [ ] Add UI tabs/views: feed, mentions, direct messages, lists
- - [ ] Embed pictures ("pic" link to url) with pretty render
- - [ ] Integrate with Twitter for publishing mews to tweets from your unique userspace
- - [ ] Integrate with DPKI for bridging app contexts
-
-
-## Contribute
-The Holochain project welcomes pull requests and issue tickets.  Find us on [gitter](https://gitter.im/metacurrency/holochain) to chat.
-
-Contributors to this project are expected to follow our [development protocols & practices](https://github.com/metacurrency/holochain/wiki/Development-Protocols).
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
@@ -182,5 +149,3 @@ Contributors to this project are expected to follow our [development protocols &
 Copyright (C) 2017, The MetaCurrency Project (Eric Harris-Braun, Arthur Brock, et. al.)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the license provided in the LICENSE file (GPLv3).  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-**Note:** We are considering other 'looser' licensing options (like MIT license) but at this stage are using GPL while we're getting the matter sorted out.
